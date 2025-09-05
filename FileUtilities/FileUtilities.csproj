@@ -14,6 +14,7 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <FileVersion>1.0.0.0</FileVersion>
         <Product>FluffyVoid.FileUtilities</Product>
+        <RepositoryUrl>https://github.com/ashiryn/FileUtilities</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
