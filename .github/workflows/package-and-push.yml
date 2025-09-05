@@ -6,7 +6,7 @@ name: NuGet Generation
 on:
   pull_request:
     types: [closed]
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 env:
   NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
