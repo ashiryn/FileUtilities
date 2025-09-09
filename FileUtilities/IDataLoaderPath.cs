@@ -1,4 +1,4 @@
-﻿namespace FluffyVoid.FileUtilities.DataLoader;
+﻿namespace FluffyVoid.FileUtilities;
 
 /// <summary>
 ///     Defines a contract for all data loaders to enforce functionality needed

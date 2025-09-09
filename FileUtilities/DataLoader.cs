@@ -7,12 +7,12 @@ using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 using Formatting = Newtonsoft.Json.Formatting;
 
-namespace FluffyVoid.FileUtilities.DataLoader;
+namespace FluffyVoid.FileUtilities;
 
 /// <summary>
 ///     Loads data from a dynamic data path allowing users to define primary and fallback data locations
 /// </summary>
-public class DataLoader
+public static class DataLoader
 {
     /// <summary>
     ///     Lookup table of additional fallback paths to use if the primary data path fails

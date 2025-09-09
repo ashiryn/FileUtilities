@@ -1,4 +1,4 @@
-﻿namespace FluffyVoid.FileUtilities.DataLoader;
+﻿namespace FluffyVoid.FileUtilities;
 
 /// <summary>
 ///     Data path definition to retrieve files from a location alongside the running exectuable

@@ -1,4 +1,4 @@
-namespace FluffyVoid.FileUtilities.DataLoader;
+namespace FluffyVoid.FileUtilities;
 
 /// <summary>
 ///     Data path definition to retrieve files from a debug location relative to the bin folder
