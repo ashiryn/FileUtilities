@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FluffyVoid.FileUtilities.DataLoader;
+namespace FluffyVoid.FileUtilities;
 
 /// <summary>
 ///     Data path definition to retrieve files from default special folders based on the type of data location
