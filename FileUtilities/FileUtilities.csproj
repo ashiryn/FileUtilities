@@ -7,27 +7,32 @@
         <AssemblyName>FluffyVoid.FileUtilities</AssemblyName>
         <RootNamespace>FluffyVoid.FileUtilities</RootNamespace>
         <PackageId>FluffyVoid.FileUtilities</PackageId>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <Title>FileUtilities</Title>
         <Authors>FluffyVoid</Authors>
         <Description>Collection of file IO utilities including the Data Loader framework that can load file data from user defined data locations. </Description>
-        <AssemblyVersion>1.0.1</AssemblyVersion>
-        <FileVersion>1.0.1</FileVersion>
+        <AssemblyVersion>1.0.3</AssemblyVersion>
+        <FileVersion>1.0.3</FileVersion>
         <Product>FluffyVoid.FileUtilities</Product>
         <RepositoryUrl>https://github.com/ashiryn/FileUtilities</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <DocumentationFile>bin\Debug\FileUtilities.xml</DocumentationFile>
+      <DocumentationFile>bin/Debug/FluffyVoid.FileUtilities.xml</DocumentationFile>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <DocumentationFile>bin\Release\FileUtilities.xml</DocumentationFile>
+      <DocumentationFile>bin/Release/FluffyVoid.FileUtilities.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
         <PackageReference Include="YamlDotNet" Version="16.3.0"/>
     </ItemGroup>
-
+	<ItemGroup>
+        <None Include="bin/$(Configuration)/FluffyVoid.FileUtilities.xml" Pack="true">
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+            <PackageFlatten>true</PackageFlatten>
+        </None>
+	</ItemGroup>
 </Project>
