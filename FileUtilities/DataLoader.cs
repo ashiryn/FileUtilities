@@ -375,6 +375,36 @@ public static class DataLoader
     }
 
     /// <summary>
+    /// Attempts to find the full directory path for the passed in DataLocation
+    /// </summary>
+    /// <param name="location">The data location type to try to find a directory path for</param>
+    /// <param name="directoryPath">The full data path to the desired data location</param>
+    /// <typeparam name="TLoader">The data loader to get a data location from</typeparam>
+    /// <returns>True if the directory was found for the desired loader type, otherwise false</returns>
+    public static bool TryGetLocationPath<TLoader>(DataLocation location, out string directoryPath)
+    {
+        if (s_primaryDataLoaderPath is TLoader)
+        {
+            directoryPath = $"{s_primaryDataLoaderPath.GetDataPath(location)}";
+
+            return true;
+        }
+
+        foreach (IDataLoaderPath fallbackPath in FallbackDataLoaderPaths)
+        {
+            if (fallbackPath is TLoader)
+            {
+                directoryPath = $"{fallbackPath.GetDataPath(location)}";
+
+                return true;
+            }
+        }
+
+        directoryPath = string.Empty;
+        return false;
+    }
+
+    /// <summary>
     ///     Helper function used to load JSON data from a file path
     /// </summary>
     /// <param name="filePath">Path to the JSON file within our Data folder</param>
