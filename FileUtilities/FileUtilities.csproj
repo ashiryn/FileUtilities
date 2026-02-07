@@ -7,7 +7,7 @@
         <AssemblyName>FluffyVoid.FileUtilities</AssemblyName>
         <RootNamespace>FluffyVoid.FileUtilities</RootNamespace>
         <PackageId>FluffyVoid.FileUtilities</PackageId>
-        <Version>1.0.3</Version>
+        <Version>1.0.4</Version>
         <Title>FileUtilities</Title>
         <Authors>FluffyVoid</Authors>
         <Description>Collection of file IO utilities including the Data Loader framework that can load file data from user defined data locations. </Description>
