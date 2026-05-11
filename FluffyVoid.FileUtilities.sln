@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUtilities", "FileUtilities\FileUtilities.csproj", "{21AB659A-BFBB-48BA-8353-3EE1058E47D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluffyVoid.FileUtilities", "FluffyVoid.FileUtilities\FluffyVoid.FileUtilities.csproj", "{21AB659A-BFBB-48BA-8353-3EE1058E47D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
